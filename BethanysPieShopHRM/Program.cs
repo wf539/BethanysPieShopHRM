@@ -61,12 +61,23 @@ Console.WriteLine(ratePerHour);
 if (currentMonthWage > 2000)
 	Console.WriteLine("Top paid employee!");
 
-int employeeCount = 15;
-employeeCount--;
+//int employeeCount = 15;
+//employeeCount--;
 
-bool a;
-int b;
+//bool a;
+//int b;
 
-Console.WriteLine(employeeCount);
+//Console.WriteLine(employeeCount);
+
+int intMaxValue = int.MaxValue;
+int intMinValue = int.MinValue;
+
+char userSelection = 'a';
+
+char upperVersion = char.ToUpper(userSelection);
+
+bool isDigit = char.IsDigit(userSelection);
+
+bool isLetter = char.IsLetter(userSelection);
 
 Console.ReadLine();
