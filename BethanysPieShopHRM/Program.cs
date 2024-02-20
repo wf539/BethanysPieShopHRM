@@ -19,15 +19,15 @@ Console.WriteLine("Welcome to Bethany's Pie Shop HRM");
 
 //string 2Name = Console.ReadLine();
 
-int monthlyWage = 1234;
+var monthlyWage = 1234;
 
 int months = 12, bonus = 1000;
 
-bool isActive = true;
+var isActive = true;
 
-double rating = 99.25;
+var rating = 99.25;
 
-//byte numberOfEmployees = 300;
+var numberOfEmployees = 300;
 
 int hoursWorked;
 
@@ -80,24 +80,32 @@ if (currentMonthWage > 2000)
 
 //bool isLetter = char.IsLetter(userSelection);
 
-DateTime hireDate = new DateTime(2022, 3, 28, 14, 30, 0);
-Console.WriteLine(hireDate);
+var hireDate = new DateTime(2022, 3, 28, 14, 30, 0);
+//Console.WriteLine(hireDate);
 
-DateTime exitDate = new DateTime(2025, 12, 11);
+//DateTime exitDate = new DateTime(2025, 12, 11);
 
-//DateTime invalidDate = new DateTime(2025, 15, 11);
+////DateTime invalidDate = new DateTime(2025, 15, 11);
 
-DateTime startDate = hireDate.AddDays(15);                                   
-Console.WriteLine(startDate);
+//DateTime startDate = hireDate.AddDays(15);                                   
+//Console.WriteLine(startDate);
 
-DateTime currentDate = DateTime.Now;
-bool areWeInDst = currentDate.IsDaylightSavingTime();
+//DateTime currentDate = DateTime.Now;
+//bool areWeInDst = currentDate.IsDaylightSavingTime();
 
-DateTime startHour = DateTime.Now;
-TimeSpan workTime = new TimeSpan(8, 35, 0);
-DateTime endHour = startHour.Add(workTime);
+//DateTime startHour = DateTime.Now;
+//TimeSpan workTime = new TimeSpan(8, 35, 0);
+//DateTime endHour = startHour.Add(workTime);
 
-Console.WriteLine(startHour.ToLongDateString());
-Console.WriteLine(endHour.ToShortTimeString());
+//Console.WriteLine(startHour.ToLongDateString());
+//Console.WriteLine(endHour.ToShortTimeString());
+
+long veryLongMonth = numberOfHoursWorked;//works fine
+
+double d = 123456789.0;
+
+int x = (int)d;
+
+int intVeryLongMonth = (int)veryLongMonth;
 
 Console.ReadLine();
