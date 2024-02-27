@@ -1,111 +1,51 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-/*
- Multi-line
- comment
- */
-Console.WriteLine("Welcome to Bethany's Pie Shop HRM");
+//int age = 23;
 
-//Console.WriteLine("Please enter your name: ");
+//bool a = age == 23;
 
-//The following will accept the name
-//string name = Console.ReadLine();
+//Console.WriteLine("Age is 23: " +  a);
 
-//string name2 = Console.ReadLine();
+//bool b = age > 23;
+//Console.WriteLine("Age is greater than 23: " + b);
 
-//string name_2 = Console.ReadLine();
+//bool c = (age >= 18) && (age <= 65);
+//Console.WriteLine("Age is between 18 and 65: " + c);
 
-//string Name_2 = Console.ReadLine();
+//int age1 = 16;
+//int age2 = 64;
+//bool d = (age1 >= 18) && (age2 <= 65);
+//Console.WriteLine("Age1 is greater than 18 AND age2 is less than 65: " + d);
+//bool e = (age1 >= 18) || (age2 <= 65);
+//Console.WriteLine("Age1 is greater than 18 OR age2 is less than 65: " + e);
 
-//string 2Name = Console.ReadLine();
+//Console.WriteLine("Enter the age of the new candidate: ");
+//int age = int.Parse(Console.ReadLine());
 
-var monthlyWage = 1234;
+//if (age < 18)
+//	{ 
+//		Console.WriteLine("Too young to apply.");
+//		Console.WriteLine("Send email to candidate.");
+//	}
+//else if (age > 65)
+//{
+//	Console.WriteLine("Too young to apply.");
+//	Console.WriteLine("Send email to candidate.");
+//}
+//else
+//	{ 
+//		Console.WriteLine("Great, you can now start with your application!");
+//	}
 
-int months = 12, bonus = 1000;
+DateTime today = DateTime.Now;
+bool endOfMonthPaymentStarted = false;
 
-var isActive = true;
-
-var rating = 99.25;
-
-var numberOfEmployees = 300;
-
-int hoursWorked;
-
-hoursWorked = 125;
-
-hoursWorked = 148;
-
-//monthlyWage = true;
-
-const double interestRate = 0.07;
-
-// interestRate = 0.08;
-
-string firstName = "Bethany";
-string lastName = "Smith";
-
-string emptyString = "";
-
-//Console.WriteLine("Please enter your name: ");
-//string name = Console.ReadLine();
-
-double ratePerHour = 12.34;
-int numberOfHoursWorked = 165;
-
-double currentMonthWage = ratePerHour * numberOfHoursWorked + bonus;
-Console.WriteLine(currentMonthWage);
-
-ratePerHour += 3; //same as ratePerHour = ratePerHour +3;
-Console.WriteLine(ratePerHour);
-
-if (currentMonthWage > 2000)
-	Console.WriteLine("Top paid employee!");
-
-//int employeeCount = 15;
-//employeeCount--;
-
-//bool a;
-//int b;
-
-//Console.WriteLine(employeeCount);
-
-//int intMaxValue = int.MaxValue;
-//int intMinValue = int.MinValue;
-
-//char userSelection = 'a';
-
-//char upperVersion = char.ToUpper(userSelection);
-
-//bool isDigit = char.IsDigit(userSelection);
-
-//bool isLetter = char.IsLetter(userSelection);
-
-var hireDate = new DateTime(2022, 3, 28, 14, 30, 0);
-//Console.WriteLine(hireDate);
-
-//DateTime exitDate = new DateTime(2025, 12, 11);
-
-////DateTime invalidDate = new DateTime(2025, 15, 11);
-
-//DateTime startDate = hireDate.AddDays(15);                                   
-//Console.WriteLine(startDate);
-
-//DateTime currentDate = DateTime.Now;
-//bool areWeInDst = currentDate.IsDaylightSavingTime();
-
-//DateTime startHour = DateTime.Now;
-//TimeSpan workTime = new TimeSpan(8, 35, 0);
-//DateTime endHour = startHour.Add(workTime);
-
-//Console.WriteLine(startHour.ToLongDateString());
-//Console.WriteLine(endHour.ToShortTimeString());
-
-long veryLongMonth = numberOfHoursWorked;//works fine
-
-double d = 123456789.0;
-
-int x = (int)d;
-
-int intVeryLongMonth = (int)veryLongMonth;
-
-Console.ReadLine();
+if (today.Date.Day == 20)
+{
+	Console.WriteLine("Please start end-of-month employee payments");
+}
+else if (today.Date.Day >= 25 && !endOfMonthPaymentStarted)
+{
+	Console.WriteLine("Payments will be late!");
+}
+//else isn't required!
