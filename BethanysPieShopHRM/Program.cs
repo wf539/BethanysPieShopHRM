@@ -22,30 +22,19 @@
 //Console.WriteLine("Enter the age of the new candidate: ");
 //int age = int.Parse(Console.ReadLine());
 
-//if (age < 18)
-//	{ 
-//		Console.WriteLine("Too young to apply.");
-//		Console.WriteLine("Send email to candidate.");
-//	}
-//else if (age > 65)
-//{
-//	Console.WriteLine("Too young to apply.");
-//	Console.WriteLine("Send email to candidate.");
-//}
-//else
-//	{ 
-//		Console.WriteLine("Great, you can now start with your application!");
-//	}
+Console.WriteLine("Enter the age of the new candidate: ");
+int age = int.Parse(Console.ReadLine());
 
-DateTime today = DateTime.Now;
-bool endOfMonthPaymentStarted = false;
-
-if (today.Date.Day == 20)
+switch (age)
 {
-	Console.WriteLine("Please start end-of-month employee payments");
+	case < 18:
+	case > 65:
+		Console.WriteLine("Sorry, your age is not within the range we are looking for");
+		break;
+	case 23:
+		Console.WriteLine("Wow, exactly what we are looking for");
+		break;
+	default:
+		Console.WriteLine("Great, you can now start with the application!");
+		break;
 }
-else if (today.Date.Day >= 25 && !endOfMonthPaymentStarted)
-{
-	Console.WriteLine("Payments will be late!");
-}
-//else isn't required!
