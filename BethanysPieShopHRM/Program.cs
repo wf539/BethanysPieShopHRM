@@ -15,6 +15,6 @@ int bonus = 1000;
 
 
 
-Utilities.UsingOptionalParameters();
+Utilities.UsingNamedArguments();
 
 Console.ReadLine();
