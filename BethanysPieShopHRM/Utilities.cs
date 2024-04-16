@@ -8,18 +8,6 @@ namespace BethanysPieShopHRM
 {
 	internal class Utilities
 	{
-		public static void UsingSimpleStrings()
-		{
-			string firstName = "Bethany";
-			string lastName = "Smith";
-			string s;
-			s = firstName;
-			var userName = "BethanyS";
-			userName = userName.ToLower();
-
-			userName = string.Empty;
-			userName = "";//identical to string.Empty;
-		}
 
 		public static void UsingExpressionBodiedSyntax()
 		{

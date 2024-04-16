@@ -10,11 +10,6 @@ int bonus = 1000;
 
 //Console.WriteLine($"Yearly wage: {yearlyWage}");
 
-
-
-
-
-
 Utilities.UsingNamedArguments();
 
 Console.ReadLine();
