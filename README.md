@@ -1,5 +1,7 @@
 # C# Fundamentals
 
+Archived 2024-04-23 12:00 BST
+
 Copyright (c) 2024 Gil Cleeren
 
 Pluralsight
